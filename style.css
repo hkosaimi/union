@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap");
+
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 2rem;
+  align-items: center;
+}
+.navLogo img {
+  width: 70px;
+}
+
+.navLinks ul {
+  display: flex;
+}
+.navLinks ul li {
+  list-style-type: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.navLinks ul li:hover {
+  opacity: 1;
+}
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.home {
+  padding: 2rem 2rem;
+  margin-left: 200px;
+  width: 50%;
+}
+.home h1 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.home div:last-child {
+  margin-top: 40px;
+}
+
+.home a {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.home a:first-child {
+  background: var(--primary-color);
+  box-shadow: 0 0 10px #4891ff;
+}
+.home a:first-child:hover {
+  box-shadow: 0 0 20px #4891ff;
+}
+.home a:last-child,
+.navLinks ul li:last-child {
+  background: #333334;
+  box-shadow: 0 0 10px #333334;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.home a:last-child:hover,
+.navLinks ul li:last-child:hover {
+  box-shadow: 0 0 20px #333334;
+  opacity: 1;
+}
+
+.more {
+  background: #fff;
+  height: 500px;
+}
+
+.homeFooter {
+  display: flex;
+  padding: 3rem 3rem;
+  font-size: 10px;
+}
+
+.homeFooter div:nth-child(1) {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 200px;
+}
+
+.fa {
+  padding: 10px 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 30px !important;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.fa:hover {
+  opacity: 1;
+}
+
+@media (max-width: 670px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem 4rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .hamMenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    cursor: pointer;
+  }
+  .ham1,
+  .ham2,
+  .ham3 {
+    width: 35px;
+    height: 5px;
+    background: #ffffff;
+  }
+  .home {
+    margin: 0;
+    width: 70%;
+  }
+  .home h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .fa {
+    font-size: 20px !important;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.7;
+    color: #fff;
+  }
+  .homeFooter div:nth-child(1) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+    top: 200px;
+  }
+  .home p {
+    margin-bottom: 50px;
+  }
+}
+.ham11 {
+  animation-name: example2;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.ham22 {
+  animation-name: example;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.ham33 {
+  animation-name: example3;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes example2 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+  to {
+    transform: rotate(-45deg);
+    transform-origin: 90%;
+  }
+}
+@keyframes example3 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    transform-origin: 90%;
+  }
+}
