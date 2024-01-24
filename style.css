@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/bg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,7 +127,7 @@ body {
 @media (max-width: 670px) {
   .navbar {
     justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
   }
   .navLinks {
     display: none;
@@ -141,13 +141,13 @@ body {
   .ham1,
   .ham2,
   .ham3 {
-    width: 35px;
-    height: 5px;
+    width: 30px;
+    height: 3px;
     background: #ffffff;
   }
   .home {
     margin: 0;
-    width: 70%;
+    width: 75%;
   }
   .home h1 {
     font-size: 35px;
@@ -170,6 +170,9 @@ body {
   }
   .home p {
     margin-bottom: 50px;
+  }
+  .homeBtn {
+    display: flex;
   }
 }
 .ham11 {
