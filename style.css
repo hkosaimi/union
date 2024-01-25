@@ -164,6 +164,9 @@ body {
   }
   .homeBtn {
     display: flex;
+    height: 60px;
+    justify-content: start;
+    align-items: center;
   }
 
   .show {
@@ -177,9 +180,8 @@ body {
     animation-name: navanimation;
     animation-duration: 2s;
     /* From https://css.glass */
-    background: linear-gradient(45deg, rgba(112, 111, 111, 0.15), rgba(29, 28, 28, 0.3));
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    box-shadow: 0 0 20px 5px rgb(0, 0, 0);
     backdrop-filter: blur(14.2px);
     -webkit-backdrop-filter: blur(14.2px);
   }
