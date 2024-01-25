@@ -12,6 +12,7 @@ body {
   padding: 0;
   font-size: 16px;
   color: #fff;
+  user-select: none;
 }
 
 .navbar {
@@ -45,7 +46,6 @@ body {
   background-position: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .home {
@@ -57,10 +57,6 @@ body {
   font-weight: 900;
   font-size: 50px;
   line-height: 60px;
-}
-
-.home div:last-child {
-  margin-top: 40px;
 }
 
 .home a {
@@ -89,11 +85,6 @@ body {
   opacity: 1;
 }
 
-.more {
-  background: #fff;
-  height: 500px;
-}
-
 .homeSide {
   display: flex;
   flex-direction: column;
@@ -105,9 +96,7 @@ body {
 .fa {
   padding: 10px 10px;
   margin-left: 10px;
-  border-radius: 50%;
   font-size: 30px !important;
-  text-align: center;
   text-decoration: none;
   opacity: 0.7;
   color: #fff;
@@ -159,9 +148,6 @@ body {
     color: #fff;
   }
 
-  .home p {
-    margin-bottom: 50px;
-  }
   .homeBtn {
     display: flex;
     height: 60px;
@@ -178,10 +164,10 @@ body {
     width: 200px;
     height: 100%;
     animation-name: navanimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
     /* From https://css.glass */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    box-shadow: 0 0 20px 5px rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 4, 0.663), rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 30px rgb(0, 0, 0);
     backdrop-filter: blur(14.2px);
     -webkit-backdrop-filter: blur(14.2px);
   }
@@ -192,7 +178,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     animation-name: links-animation;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
   .show ul li {
@@ -304,4 +290,23 @@ body {
     opacity: 1;
     transform: translateX(-5px);
   }
+}
+
+.checklist div {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  text-wrap: nowrap;
+}
+
+.checklist div:first-child {
+  margin-top: 10px;
+}
+
+.checklist div:last-child {
+  margin-bottom: 20px;
+}
+.checklist i {
+  color: var(--primary-color);
 }
