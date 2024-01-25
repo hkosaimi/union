@@ -72,6 +72,9 @@ body {
 .home a:first-child:hover {
   box-shadow: 0 0 20px #4891ff;
 }
+.home a:first-child:active {
+  box-shadow: 0 0 20px 5px #4891ff;
+}
 .home a:last-child,
 .navLinks ul li:last-child {
   background: #333334;
@@ -82,6 +85,11 @@ body {
 .home a:last-child:hover,
 .navLinks ul li:last-child:hover {
   box-shadow: 0 0 20px #333334;
+  opacity: 1;
+}
+.home a:last-child:active,
+.navLinks ul li:last-child:active {
+  box-shadow: 0 0 20px 5px #333334;
   opacity: 1;
 }
 
@@ -106,6 +114,7 @@ body {
   opacity: 1;
   transform: scale(1.2);
 }
+
 .mobileNavLinks {
   display: none;
 }
@@ -134,7 +143,7 @@ body {
   }
   .home {
     margin: 0;
-    width: 75%;
+    width: 80%;
   }
   .home h1 {
     font-size: 35px;
@@ -150,7 +159,7 @@ body {
 
   .homeBtn {
     display: flex;
-    height: 60px;
+    height: 70px;
     justify-content: start;
     align-items: center;
   }
