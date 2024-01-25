@@ -57,6 +57,9 @@ body {
   font-weight: 900;
   font-size: 50px;
   line-height: 60px;
+  background: -webkit-linear-gradient(#dad8d8, #b4b2b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home a {
@@ -143,12 +146,20 @@ body {
   }
   .home {
     margin: 0;
-    width: 80%;
+    width: 85%;
   }
   .home h1 {
     font-size: 35px;
     line-height: 40px;
+    width: 400px;
   }
+  .home p {
+    width: 350px;
+  }
+  .homeBtn {
+    width: 400px;
+  }
+
   .fa {
     font-size: 20px !important;
     text-align: center;
@@ -306,6 +317,7 @@ body {
   flex-direction: column;
   font-size: 10px;
   text-wrap: nowrap;
+  width: 400px;
 }
 
 .checklist div:first-child {
@@ -322,4 +334,8 @@ body {
 }
 .checklist i {
   color: var(--primary-color);
+}
+
+.checklist p {
+  background: rgba(64, 64, 64, 0.5);
 }
