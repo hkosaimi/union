@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("bg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,6 +175,19 @@ body {
     display: flex;
   }
 }
+.ham1 {
+  animation-name: example4;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.ham3 {
+  animation-name: example5;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
 .ham11 {
   animation-name: example2;
   animation-duration: 0.3s;
@@ -210,6 +223,26 @@ body {
   to {
     transform: rotate(-45deg);
     transform-origin: 90%;
+  }
+}
+@keyframes example4 {
+  from {
+    transform: rotate(-45deg);
+    transform-origin: 90%;
+  }
+  to {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+}
+@keyframes example5 {
+  from {
+    transform: rotate(45deg);
+    transform-origin: 90%;
+  }
+  to {
+    transform: rotate(0deg);
+    transform-origin: 0;
   }
 }
 @keyframes example3 {
