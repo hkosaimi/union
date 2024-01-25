@@ -151,10 +151,10 @@ body {
   .home h1 {
     font-size: 35px;
     line-height: 40px;
-    width: 400px;
+    width: 80%;
   }
   .home p {
-    width: 350px;
+    width: 80%;
   }
   .homeBtn {
     width: 400px;
@@ -316,18 +316,17 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 10px;
-  text-wrap: nowrap;
-  width: 400px;
 }
 
 .checklist div:first-child {
   display: flex;
   margin-top: 10px;
-  column-gap: 10px;
+  text-wrap: nowrap;
   margin-bottom: -5px;
 }
 
 .checklist div:last-child {
+  text-wrap: nowrap;
   display: flex;
   column-gap: 10px;
   margin-bottom: 20px;
@@ -337,5 +336,9 @@ body {
 }
 
 .checklist p {
-  background: rgba(64, 64, 64, 0.5);
+  /*   background: rgba(64, 64, 64, 0.5);
+ */
+
+  margin-right: 10px;
+  width: auto;
 }
