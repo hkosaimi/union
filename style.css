@@ -5,11 +5,14 @@
   --light-color: #f4f4f6;
   --dark-color: #111;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Poppins";
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   color: #fff;
   user-select: none;
@@ -62,6 +65,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.home > p {
+  margin-top: 20px;
+}
 .home a {
   padding: 10px 20px;
   margin-right: 10px;
@@ -106,20 +112,53 @@ body {
 
 .fa {
   padding: 10px 10px;
-  margin-left: 10px;
   font-size: 30px !important;
   text-decoration: none;
   opacity: 0.7;
+  text-align: center;
   color: #fff;
 }
 
 .fa:hover {
   opacity: 1;
   transform: scale(1.2);
+  color: var(--primary-color);
 }
 
 .mobileNavLinks {
   display: none;
+}
+
+.sponsers {
+  height: 300px;
+  background: #c8c8c8;
+  color: #000;
+}
+.checklist {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.checklist div:first-child {
+  display: flex;
+  text-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.checklist div:last-child {
+  text-wrap: nowrap;
+  display: flex;
+  column-gap: 10px;
+}
+.checklist i {
+  color: var(--primary-color);
+}
+
+.checklist p {
+  margin-right: 10px;
+  width: auto;
 }
 
 @media (max-width: 670px) {
@@ -145,19 +184,27 @@ body {
     background: #ffffff;
   }
   .home {
+    width: 100%;
+    padding: 2rem 3rem;
     margin: 0;
-    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .home h1 {
     font-size: 35px;
     line-height: 40px;
-    width: 80%;
+    text-align: center;
   }
-  .home p {
-    width: 80%;
+  .home > p {
+    margin-top: 40px;
   }
-  .homeBtn {
-    width: 400px;
+
+  .homeSide {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    justify-content: center;
   }
 
   .fa {
@@ -171,8 +218,9 @@ body {
   .homeBtn {
     display: flex;
     height: 70px;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    width: 400px;
   }
 
   .show {
@@ -209,6 +257,33 @@ body {
   }
   .blur {
     filter: blur(5px);
+  }
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .checklist div:first-child {
+    row-gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .checklist div:last-child {
+    row-gap: 7px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .checklist i {
+    color: var(--primary-color);
   }
 }
 .ham1 {
@@ -310,35 +385,4 @@ body {
     opacity: 1;
     transform: translateX(-5px);
   }
-}
-
-.checklist {
-  display: flex;
-  flex-direction: column;
-  font-size: 10px;
-}
-
-.checklist div:first-child {
-  display: flex;
-  margin-top: 10px;
-  text-wrap: nowrap;
-  margin-bottom: -5px;
-}
-
-.checklist div:last-child {
-  text-wrap: nowrap;
-  display: flex;
-  column-gap: 10px;
-  margin-bottom: 20px;
-}
-.checklist i {
-  color: var(--primary-color);
-}
-
-.checklist p {
-  /*   background: rgba(64, 64, 64, 0.5);
- */
-
-  margin-right: 10px;
-  width: auto;
 }
