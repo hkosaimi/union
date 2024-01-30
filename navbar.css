@@ -64,7 +64,7 @@
     animation-name: navanimation;
     animation-duration: 1s;
     /* From https://css.glass */
-    background: linear-gradient(90deg, rgba(0, 0, 4, 0.663), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(90deg, rgba(0, 0, 4, 0.7), rgba(0, 0, 0, 0.7));
     box-shadow: 0 0 30px rgb(0, 0, 0);
     backdrop-filter: blur(14.2px);
     -webkit-backdrop-filter: blur(14.2px);
