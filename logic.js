@@ -11,5 +11,5 @@ hamMenu.onclick = () => {
   ham3.classList.toggle("ham33");
 
   navLinks.classList.toggle("show");
-  home.classList.toggle("blur");
+  home.classList.toggle("home-blur");
 };

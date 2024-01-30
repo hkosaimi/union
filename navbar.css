@@ -1,0 +1,208 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  background: #081b29;
+}
+.navLogo img {
+  width: 70px;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.7));
+}
+
+.navLinks ul {
+  display: flex;
+}
+.navLinks ul li {
+  list-style-type: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.navLinks ul li:hover {
+  opacity: 1;
+}
+
+.mobileNavLinks {
+  display: none;
+}
+
+@media (max-width: 670px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLogo img {
+    width: 50px;
+  }
+  .hamMenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .ham1,
+  .ham2,
+  .ham3 {
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 200px;
+    height: 100%;
+    animation-name: navanimation;
+    animation-duration: 1s;
+    /* From https://css.glass */
+    background: linear-gradient(90deg, rgba(0, 0, 4, 0.663), rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    backdrop-filter: blur(14.2px);
+    -webkit-backdrop-filter: blur(14.2px);
+  }
+  .show ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation-name: links-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .show ul li {
+    margin-bottom: 20px;
+  }
+  .show ul li:nth-child(1) {
+    margin-top: 60px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 100px;
+    column-gap: 5px;
+  }
+  .social a {
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .social a:hover {
+    color: var(--primary-color);
+  }
+}
+
+.ham1 {
+  animation-name: example4;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.ham3 {
+  animation-name: example5;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.ham11 {
+  animation-name: example2;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.ham22 {
+  animation-name: example;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.ham33 {
+  animation-name: example3;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes example2 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+  to {
+    transform: rotate(-45deg);
+    transform-origin: 90%;
+  }
+}
+@keyframes example4 {
+  from {
+    transform: rotate(-45deg);
+    transform-origin: 90%;
+  }
+  to {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+}
+@keyframes example5 {
+  from {
+    transform: rotate(45deg);
+    transform-origin: 90%;
+  }
+  to {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+}
+@keyframes example3 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    transform-origin: 90%;
+  }
+}
+
+@keyframes navanimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes links-animation {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+}

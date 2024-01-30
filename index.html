@@ -3,87 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="home.css" />
     <script src="https://kit.fontawesome.com/c22e521563.js" crossorigin="anonymous"></script>
     <title>Union</title>
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="navLogo">
-          <a>
-            <img src="logo.png" />
-          </a>
-        </div>
-        <div class="navLinks" id="mobileNavLinks">
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>Pricing</a></li>
-            <li><a>Agenda</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Explore</a></li>
-          </ul>
-        </div>
-        <div class="hamMenu" id="hamMenu">
-          <div class="ham1" id="ham1"></div>
-          <div class="ham2" id="ham2"></div>
-          <div class="ham3" id="ham3"></div>
-        </div>
-        <div class="mobileNavLinks" id="mobileNavLinks">
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>Pricing</a></li>
-            <li><a>Agenda</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Explore</a></li>
-          </ul>
-        </div>
+    <div class="navbar">
+      <div class="navLogo">
+        <a>
+          <img src="/assets/logo.png" />
+        </a>
       </div>
-      <div class="home" id="home">
-        <h1>A specialized team guiding you through success</h1>
-        <p>
-          Your project in the hands of experinced people in different fields such as management,
-          business, and marketing
-        </p>
-        <!--  <div class="checklist">
-          <div class="checklistRow1">
-            <p><i class="fa-regular fa-circle-check"></i> Personalized onboarding help</p>
-            <p><i class="fa-regular fa-circle-check"></i> Friendly pricing as you scale</p>
-          </div>
-          <div class="checklistRow2">
-            <p><i class="fa-regular fa-circle-check"></i> 95+ languages supported</p>
-            <p><i class="fa-regular fa-circle-check"></i> 14-day free trial</p>
-            <p><i class="fa-regular fa-circle-check"></i> Cancel anytime</p>
-          </div>
-        </div> -->
-        <div class="card_container">
-          <div class="card card1">
-            <p>GitHub</p>
-          </div>
-          <div class="card card2">
-            <p>Netflix</p>
-          </div>
-          <div class="card card3">
-            <p>Shahid</p>
-          </div>
-        </div>
-        <div class="homeBtn">
-          <a>Get started</a>
-          <a> <i class="fa-solid fa-pen-to-square"></i> Book a demo</a>
-        </div>
+      <div class="navLinks" id="mobileNavLinks">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>Agenda</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+          <li><a>Explore</a></li>
+        </ul>
       </div>
-      <div class="homeSide">
+      <div class="social">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-google"></a>
         <a href="#" class="fa fa-linkedin"></a>
         <a href="#" class="fa fa-youtube"></a>
       </div>
+      <div class="hamMenu" id="hamMenu">
+        <div class="ham1" id="ham1"></div>
+        <div class="ham2" id="ham2"></div>
+        <div class="ham3" id="ham3"></div>
+      </div>
+      <div class="mobileNavLinks" id="mobileNavLinks">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>Agenda</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+          <li><a>Explore</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="sponsers">
-      <h1>Hi</h1>
+    <div class="home" id="home">
+      <h1>A specialized team guiding you through success</h1>
+      <p>
+        Your project in the hands of experinced people in different fields such as management,
+        business, and marketing
+      </p>
+
+      <div class="homeBtn">
+        <a>Get started</a>
+        <a> <i class="fa-solid fa-pen-to-square"></i> Book a demo</a>
+      </div>
+
+      <div class="card_container">
+        <div class="card1">
+          <h2>Services we provide</h2>
+          <p>We are redefining the way the world comunicated, works, ans works.</p>
+        </div>
+        <div class="card2_container">
+          <div class="card2">
+            <span class="material-symbols-outlined"> pinch_zoom_out </span>
+            <h2>UI/UX Design</h2>
+            <p>Hight quality and cutting edge design for software products</p>
+          </div>
+          <div class="card3">
+            <span class="material-symbols-outlined"> sports_esports </span>
+            <h2>Games</h2>
+            <p>The high quality you get when collaborating with us</p>
+          </div>
+        </div>
+        <div class="card4">
+          <span class="material-symbols-outlined"> language </span>
+          <h2>Web development</h2>
+          <p>
+            With a desgin first methodolgy we are kept providing user friendly interfaces and user
+            experince beyond the expectations.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script src="logic.js"></script>
