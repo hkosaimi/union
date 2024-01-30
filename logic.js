@@ -1,15 +1,13 @@
-let hamMenu = document.getElementById("hamMenu");
-let ham1 = document.getElementById("ham1");
-let ham2 = document.getElementById("ham2");
-let ham3 = document.getElementById("ham3");
-let navLinks = document.getElementById("mobileNavLinks");
-let home = document.getElementById("home");
+let hamMenu = document.getElementById("hamburger");
+let ham1 = document.getElementById("line1");
+let ham2 = document.getElementById("line2");
+let ham3 = document.getElementById("line3");
+let navLinks = document.getElementById("links2");
 
 hamMenu.onclick = () => {
   ham1.classList.toggle("ham11");
   ham2.classList.toggle("ham22");
   ham3.classList.toggle("ham33");
 
-  navLinks.classList.toggle("show");
-  home.classList.toggle("home-blur");
+  navLinks.classList.toggle("show-links");
 };
