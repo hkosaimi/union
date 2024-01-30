@@ -196,16 +196,14 @@
     margin-top: 30px;
     width: 100%;
     height: 200px;
-    padding: 4rem 3rem;
+    padding: 3rem 3rem;
     height: auto;
     border-radius: 20px;
-    background: linear-gradient(#03011b, #04001c);
-    box-shadow: 0 0 10px #000;
+    background: #000;
   }
   .home .subscribe h1 {
     line-height: 30px;
     margin-bottom: 20px;
-    text-align: center;
   }
   .home .subscribe p {
     color: #ffffff95;
